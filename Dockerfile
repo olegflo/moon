@@ -1,13 +1,13 @@
 FROM ruby:2.5-alpine
 
-RUN apk add --update \
-        bash         \
-        build-base   \
-        libxml2-dev  \
-        libxslt-dev  \
-        sqlite-dev   \
-        nodejs       \
-        tzdata
+RUN apk add --update            \
+        bash                    \
+        build-base              \
+        libxml2-dev             \
+        libxslt-dev             \
+        nodejs                  \
+        tzdata                  \
+        postgresql-dev
 
 WORKDIR /usr/src/app
 
